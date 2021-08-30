@@ -45,7 +45,7 @@ p1 <- ggplot(mydata, aes(x=Temperature, y=Height)) + geom_boxplot() + geom_smoot
 plot(p1)
 #save figure
 figure_file1 = here("results","resultfigure1.png")
-ggsave(filename = figure_file1, plot=p1) 
+ggsave(filename = figure_file1, plot=p1)  
 
 ##create another scatterplot with weight on the x-axis and the new numerical variable (Temperature) on the y-axis
 p2 <- ggplot(mydata, aes(x=Weight, y=Temperature, colour ="red")) + geom_point() + geom_smooth(method='lm')
